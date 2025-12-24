@@ -1,0 +1,26 @@
+body {
+  background-color: #f4f6f9;
+}
+
+.sidebar {
+  min-height: 100vh;
+  background-color: #212529;
+}
+
+.sidebar .nav-link {
+  color: #adb5bd;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  color: #fff;
+  background-color: #343a40;
+}
+
+.sidebar .nav-link i {
+  width: 20px;
+}
+
+.content-wrapper {
+  padding: 24px;
+}

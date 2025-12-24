@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register | PROIS</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./assets/libs/fontawesome/css/all.min.css" />
+
+    <style>
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      }
+
+      .register-card {
+        max-width: 420px;
+        width: 100%;
+      }
+
+      .brand-icon {
+        font-size: 3rem;
+        color: #0d6efd;
+      }
+    </style>
+  </head>
+
+  <body class="d-flex align-items-center justify-content-center">
+    <div class="card shadow-lg register-card">
+      <div class="card-body p-4">
+        <div class="text-center mb-4">
+          <div class="brand-icon mb-2">
+            <i class="fa-solid fa-boxes-stacked"></i>
+          </div>
+          <h4 class="fw-bold mb-1">PROIS</h4>
+          <p class="text-muted mb-0">Please login to continue</p>
+        </div>
+
+        <form id="registerForm">
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Username</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-user"></i>
+              </span>
+              <input
+                type="text"
+                id="username"
+                class="form-control"
+                placeholder="Enter username"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Password</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-lock"></i>
+              </span>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Enter password"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Password Confirmation</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="fa-solid fa-lock"></i>
+              </span>
+              <input
+                type="password"
+                id="passwordConfirmation"
+                class="form-control"
+                placeholder="Re-enter password"
+                required
+              />
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            id="btnSubmit"
+            class="btn btn-primary w-100 mb-3"
+          >
+            <i class="fa-solid fa-user-plus me-1"></i>
+            Register
+          </button>
+
+          <a
+            href="login.html"
+            id="btnSubmit"
+            class="btn btn-outline-secondary w-100"
+          >
+            <i class="fa-solid fa-right-to-bracket me-1"></i>
+            Login
+          </a>
+        </form>
+
+        <div class="text-center mt-4">
+          <small class="text-muted">
+            2025 &copy; PROIS by J. Maulana Yusuf
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./assets/libs/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Sweetalert JS -->
+    <script src="./assets/libs/sweetalert2.js"></script>
+
+    <!-- Page Module -->
+    <script type="module" src="./assets/js/pages/register.module.js"></script>
+  </body>
+</html>

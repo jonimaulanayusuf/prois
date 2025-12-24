@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard | PROIS</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./assets/libs/fontawesome/css/all.min.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand fw-bold">
+          <i class="fa-solid fa-boxes-stacked me-2"></i>
+          PROIS
+        </span>
+
+        <div class="d-flex align-items-center text-white">
+          <i class="fa-solid fa-user me-2"></i>
+          <span id="currentUsername">Admin</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-2 d-none d-md-block sidebar p-0">
+          <div class="position-sticky">
+            <ul class="nav flex-column mt-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="dashboard.html">
+                  <i class="fa-solid fa-chart-line"></i>
+                  Dashboard
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="items.html">
+                  <i class="fa-solid fa-box"></i>
+                  Items
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="suppliers.html">
+                  <i class="fa-solid fa-truck"></i>
+                  Suppliers
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="purchasings.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Purchasing
+                </a>
+              </li>
+
+              <li class="nav-item mt-3">
+                <a class="nav-link text-danger" href="#" id="logoutBtn">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col-md-10 ms-sm-auto content-wrapper">
+          <h4 class="fw-bold mb-4">Dashboard</h4>
+
+          <!-- Info Cards -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <h6 class="text-muted">Total Items</h6>
+                      <h3 class="fw-bold mb-0" id="totalItems">0</h3>
+                    </div>
+                    <i class="fa-solid fa-box fa-2x text-primary"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <h6 class="text-muted">Total Suppliers</h6>
+                      <h3 class="fw-bold mb-0" id="totalSuppliers">0</h3>
+                    </div>
+                    <i class="fa-solid fa-truck fa-2x text-success"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <h6 class="text-muted">Total Purchases</h6>
+                      <h3 class="fw-bold mb-0" id="totalPurchasings">0</h3>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping fa-2x text-warning"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Welcome -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="fw-bold">Welcome</h5>
+              <p class="mb-0 text-muted">
+                This is the Procurement Information System dashboard.
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./assets/libs/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Sweetalert JS -->
+    <script src="./assets/libs/sweetalert2.js"></script>
+
+    <!-- Page Module -->
+    <script type="module" src="./assets/js/pages/dashboard.module.js"></script>
+  </body>
+</html>
